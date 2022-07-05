@@ -33,14 +33,15 @@ def showStatus():
 
 
 def go(move):
+    global currentLocation
     # if they type 'go' first
         # check that they are allowed wherever they want to go
-        if move[1] in ship[currentLocation]:
-            # set the current room to the new room
-            currentLocation = ship[currentLocation][move[1]]
+    if move[1] in ship[currentLocation]:
+         # set the current room to the new room
+        currentLocation = ship[currentLocation][move[1]]
         # there is no door (link) to the new room
-        else:
-            print('You can\'t go that way!')
+    else:
+        print('You can\'t go that way!')
 
 
 def get(move):
