@@ -1,10 +1,10 @@
 from map import ship
-from controller import gameLoop
 
 currentLocation = 'Starboard Passageway'
 inventory = []
 
 def showInstructions():
+    
     """Show the game instructions when called"""
     # print a main menu and the commands
     print('''
@@ -32,9 +32,8 @@ def showStatus():
     print("---------------------------")
 
 
-def go():
+def go(move):
     # if they type 'go' first
-    if move[0] == 'go':
         # check that they are allowed wherever they want to go
         if move[1] in ship[currentLocation]:
             # set the current room to the new room
@@ -44,7 +43,7 @@ def go():
             print('You can\'t go that way!')
 
 
-def get():
+def get(move):
     # if the room contains an item, and the item is the one they want to get
     if "item" in ship[currentLocation] and move[1] in ship[currentLocation]['item']:
         # add the item to their inventory

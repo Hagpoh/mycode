@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-from controller import gameLoop
+import controller
 
-gameLoop()
+controller.gameLoop()

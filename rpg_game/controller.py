@@ -14,9 +14,9 @@ def gameLoop():
         move = move.lower().split(" ", 1)
 
         # if they type 'go' first
-        if actions.playerInput().move[0] == 'go':
-            actions.go()
+        if move[0] == 'go':
+            actions.go(move)
 
         # if they type 'get' first
-        if actions.playerInput().move[0] == 'get':
-            actions.get()
+        if move[0] == 'get':
+            actions.get(move)
