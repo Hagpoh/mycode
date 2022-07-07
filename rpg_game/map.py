@@ -60,7 +60,7 @@ ship = {
     'Crew Quarters #1': {
         'description': 'A large sleeping quarters crammed with lockers and beds for the enlisted crew.',
         'items': '',
-        'enemies': '',
+        'enemies': 'Small Alien',
         'aft': 'Starboard Passageway'
     },
 
