@@ -1,3 +1,6 @@
+"""Alta 3 RPG Final Project
+   Patrick Haggerty"""
+   
 #Controller script for the rpg game
 import actions
 

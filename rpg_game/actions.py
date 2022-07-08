@@ -1,6 +1,10 @@
 from map import ship
 from enemies import enemies
 
+"""Alta 3 RPG Final Project
+   Patrick Haggerty"""
+   #Actions scripts for the game
+
 currentLocation = 'Starboard Passageway'
 previousLocation = ''
 inventory = []

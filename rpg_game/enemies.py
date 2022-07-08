@@ -1,3 +1,6 @@
+"""Alta 3 RPG Final Project
+   Patrick Haggerty"""
+
 enemies = {
     'Small Alien': {
         'description': 'A small ugly looking alien creature, it looks like it wants to kill you.',

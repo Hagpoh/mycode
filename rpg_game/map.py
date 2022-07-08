@@ -1,9 +1,12 @@
+"""Alta 3 RPG Final Project
+   Patrick Haggerty"""
+
 ship = {
 
     'Bridge': {
         'description': 'Where the ship is operated from, also known as the pilothouse. It is eerily empty and quiet.',
         'items': '',
-        'enemies': '',
+        'enemies': 'Big Alien',
         'aft': 'Main Passageway'
     },
 
@@ -20,7 +23,7 @@ ship = {
     'Aft Passageway': {
         'description': 'A short passageway with doors on all sides.',
         'items': '',
-        'enemies': '',
+        'enemies': 'Small Alien',
         'forward': 'Main Passageway',
         'aft': 'Engine Room',
         'port': 'Armory',
@@ -30,7 +33,7 @@ ship = {
     'Engine Room': {
         'description': 'A large engine room filled with machinery, and loud mechanical noises of whirring and humming.',
         'items': '',
-        'enemies': '',
+        'enemies': 'Small Alien',
         'forward': 'Aft Passageway'
     },
 
@@ -83,7 +86,7 @@ ship = {
     'Galley': {
         'description': 'A large kitchen with appliances for cooking food everywhere.',
         'items': '',
-        'enemies': '',
+        'enemies': 'Big Alien',
         'aft': 'Port Passageway',
     },
 

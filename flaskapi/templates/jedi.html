@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <body>
+   
+    {% for jedi in jedi %}
+        {% for key, value in jedi.items() %}
+        <p style="display:inline">{{key.capitalize()}}: {{value}} | </p>
+        {% endfor %}
+        <br>
+        <br>
+    {% endfor %}
+   </body>
+</html>
+
