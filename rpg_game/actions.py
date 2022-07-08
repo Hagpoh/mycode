@@ -69,6 +69,7 @@ def get(move):
         print('Can\'t get ' + move[1] + '!')
 
 def combat(enemy):
+    #combat function if there is an alien in the room you enter
     global currentLocation
     global previousLocation
     playerHealth = 50
@@ -78,6 +79,7 @@ def combat(enemy):
     print(f'You look and see a {ship[currentLocation]["enemies"]} in the room.')
     print(eDescription)
 
+    #combat loop until the player or enemy dies
     while eHealth > 0:
         print('What would you like to do? \n[attack] \n[use] \n[run]')
         action = ''
@@ -97,5 +99,6 @@ def combat(enemy):
             print(f'The aliens health is now {eHealth}')
             playerHealth -= eDamage
             print(f'The alien attacks you, your health is now {playerHealth}')
+    #shows that the player killed the alien
     print('You killed the alien. It lies dead on the floor.')
     ship[currentLocation]['enemies'] = ''

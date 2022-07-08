@@ -2,6 +2,7 @@
 """Alta 3 Flask Final Project
    Patrick Haggerty"""
 
+#imports from flask 
 from flask import Flask
 from flask import request
 from flask import redirect
@@ -10,6 +11,7 @@ from flask import render_template
 
 app= Flask(__name__)
 
+#data being used
 jedi = [{
         "name": "Obi-Wan Kenobi",
         "age": 57,
@@ -33,8 +35,8 @@ jedi = [{
         }]
 @app.route("/jedi")
 def showjedi():
-    # render the template with the value of score for marks
-    # marks is a jinja var in the template
+    # render the template with the data from jedi
+    # jedi is a jinja var in the template
     return render_template("jedi.html", jedi = jedi)
 
 @app.route("/")

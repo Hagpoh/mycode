@@ -6,7 +6,7 @@ import actions
 
 actions.showInstructions()
 
-# loop forever
+# main game loop
 def gameLoop():
     while True:
         actions.showStatus()
